@@ -20,7 +20,7 @@ version: '{build}'
 shallow_clone: true
 clone_depth: 1
 test_script:
-  - cmd: rd /s ./www/remote/arduino/darwin
+  - cmd: rd /s /q www\remote\arduino\darwin
   - electron-builder
 artifacts:
   - path: 'releases\*.*'
