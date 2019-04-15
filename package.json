@@ -1,0 +1,121 @@
+{
+  "name": "MyCode",
+  "version": "1.2.5",
+  "description": "MyCode for pc!",
+  "homepage": "http://www.robobloq.com",
+  "main": "main.js",
+  "build": {
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://static.robobloq.cn/apps/pc/"
+      }
+    ],
+    "appId": "com.robobloq.pc",
+    "productName": "MyCode",
+    "copyright": "Copyright © 2017 MyCode",
+    "fileAssociations": {
+      "ext": "bloq",
+      "name": "MyCode"
+    },
+    "directories": {
+      "output": "../outApp"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "./build/icons/icon.icns",
+      "category": "Utility"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./build/icons/icon.ico"
+    },
+    "nsis": {
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "artifactName": "${productName}-Setup-${version}.${ext}"
+    },
+    "linux": {
+      "target": [
+        "deb"
+      ],
+      "icon": "./build/icons",
+      "category": "Utility"
+    },
+    "extraResources": [
+      {
+        "from": "./www/drivers",
+        "to": "./drivers",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "./www/remote",
+        "to": "./remote",
+        "filter": [
+          "**/*",
+          "!.gitignore"
+        ]
+      }
+    ],
+    "files": [
+      "**/*",
+      "!test/*",
+      "!www/exec/*",
+      "!README.md"
+    ]
+  },
+  "scripts": {
+    "start": "electron .",
+    "install": "electron-rebuild",
+    "pack": "electron-builder --dir",
+    "postinstall": "electron-builder install-app-deps",
+    "buildAll": "electron-builder  -wml",
+    "buildLinux": "electron-builder  -l --x64",
+    "buildLinuxPi": "electron-builder  -l --armv7l",
+    "buildWin": "electron-builder  -w --x64",
+    "buildWin32": "electron-builder  -w --ia32",
+    "build": "electron-builder",
+    "package": "electron-packager ./ Robobloq  --out ../outApp --version 1.7.9 --overwrite --icon=./build/icons/icon.ico "
+  },
+  "repository": "https://www.robobloq.com",
+  "keywords": [
+    "robobloq",
+    "scratch"
+  ],
+  "author": {
+    "name": "robobloq",
+    "email": "app@robobloq.com",
+    "url": "http://www.robobloq.com/"
+  },
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.5",
+    "electron-connect": "^0.6.3",
+    "electron-rebuild": "^1.8.1",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "avr-pizza": "^0.3.5",
+    "avrgirl-arduino": "^2.2.4",
+    "body-parser": "^1.18.3",
+    "debug": "^2.6.0",
+    "electron-is-dev": "^0.3.0",
+    "electron-log": "^2.2.16",
+    "electron-updater": "^4.0.6",
+    "express": "^4.16.3",
+    "iconv-lite": "^0.4.15",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "request": "^2.79.0",
+    "serialport": "^6.2.2",
+    "stk500-v2": "^1.0.3",
+    "underscore": "^1.8.3"
+  }
+}

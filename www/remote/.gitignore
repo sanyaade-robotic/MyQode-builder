@@ -1,0 +1,5 @@
+# speak.mp3 文件要有，但不用每次提交
+speak.*
+config.json
+
+#!.gitignore

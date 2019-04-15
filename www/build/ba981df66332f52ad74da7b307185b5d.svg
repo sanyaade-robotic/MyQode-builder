@@ -1,0 +1,67 @@
+<svg width="95" height="75" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.cls-1{fill:#2e4645;}.cls-2{fill:#0c1531;}.cls-3{fill:#6fbd49;}.cls-4{fill:#eb602a;}.cls-5,.cls-6{fill:#fff;}.cls-6{stroke:#191919;stroke-miterlimit:10;stroke-width:0.61px;}.cls-7{fill:#646464;}.cls-8{fill:#eddfc1;}.cls-9{fill:#1e2044;}</style>
+ </defs>
+ <g>
+  <rect id="svg_1" ry="0.91" rx="0.91" height="2.45" width="14.21" y="36.83" x="40.7" class="cls-1"/>
+  <rect id="svg_2" ry="0.91" rx="0.91" height="2.45" width="14.21" y="40.36" x="40.7" class="cls-1"/>
+  <path id="svg_3" d="m54.94,35.81l-14.28,0c-0.66,0 -1.23,-0.23 -1.33,-0.54l-1.33,-3.97c-0.13,-0.39 0.5,-0.75 1.33,-0.75l17,0c0.83,0 1.47,0.36 1.33,0.75l-1.35,4c-0.15,0.28 -0.71,0.51 -1.37,0.51z" class="cls-2"/>
+  <rect id="svg_4" ry="3.98" rx="3.98" height="16.94" width="36.84" y="14.01" x="29.08" class="cls-3"/>
+  <ellipse id="svg_5" ry="5.49" rx="5.44" cy="22.2" cx="38" class="cls-2"/>
+  <ellipse id="svg_6" ry="5.49" rx="5.44" cy="22.2" cx="57.32" class="cls-2"/>
+  <ellipse id="svg_7" ry="4.44" rx="4.4" cy="22.2" cx="38" class="cls-4"/>
+  <ellipse id="svg_8" ry="3.03" rx="3" cy="22.2" cx="38" class="cls-5"/>
+  <ellipse id="svg_9" ry="1.63" rx="1.61" cy="32.88" cx="42.95" class="cls-6"/>
+  <ellipse id="svg_10" ry="1.63" rx="1.61" cy="32.88" cx="52.31" class="cls-6"/>
+  <ellipse id="svg_11" ry="4.44" rx="4.4" cy="22.2" cx="57.32" class="cls-4"/>
+  <ellipse id="svg_12" ry="3.03" rx="3" cy="22.2" cx="57.32" class="cls-5"/>
+  <path id="svg_13" d="m20.36,35.07l6.38,0a1.6,1.6 0 0 1 1.33,0.76l4.79,6.66a1.6,1.6 0 0 0 1.33,0.76l26.87,0a1.6,1.6 0 0 0 1.3,-0.71l4.34,-6.81a1.6,1.6 0 0 1 1.3,-0.73l7.31,0a1.78,1.78 0 0 1 1.69,1.87l0.19,17.72a2.05,2.05 0 0 1 -0.36,1.2l-8.48,12a1.6,1.6 0 0 1 -1.3,0.71l-38.64,0a1.6,1.6 0 0 1 -1.32,-0.74l-8.75,-13a2.06,2.06 0 0 1 -0.34,-1.2l0.7,-16.7a1.77,1.77 0 0 1 1.66,-1.79z" class="cls-3"/>
+  <rect id="svg_14" ry="2.93" rx="2.93" height="46.25" width="15.22" y="28.24" x="1.84" class="cls-2"/>
+  <rect id="svg_15" ry="0.36" rx="0.36" height="0.82" width="13.95" y="31.86" x="2.48" class="cls-7"/>
+  <rect id="svg_16" ry="0.36" rx="0.36" height="0.82" width="13.95" y="34.63" x="2.48" class="cls-7"/>
+  <rect id="svg_17" ry="0.36" rx="0.36" height="0.82" width="13.95" y="37.4" x="2.48" class="cls-7"/>
+  <rect id="svg_18" ry="0.36" rx="0.36" height="0.82" width="13.95" y="40.16" x="2.48" class="cls-7"/>
+  <rect id="svg_19" ry="0.36" rx="0.36" height="0.82" width="13.95" y="42.93" x="2.48" class="cls-7"/>
+  <rect id="svg_20" ry="0.36" rx="0.36" height="0.82" width="13.95" y="45.69" x="2.48" class="cls-7"/>
+  <rect id="svg_21" ry="0.36" rx="0.36" height="0.82" width="13.95" y="48.46" x="2.48" class="cls-7"/>
+  <rect id="svg_22" ry="0.36" rx="0.36" height="0.82" width="13.95" y="51.23" x="2.48" class="cls-7"/>
+  <rect id="svg_23" ry="0.36" rx="0.36" height="0.82" width="13.95" y="53.99" x="2.48" class="cls-7"/>
+  <rect id="svg_24" ry="0.36" rx="0.36" height="0.82" width="13.95" y="56.76" x="2.48" class="cls-7"/>
+  <rect id="svg_25" ry="0.36" rx="0.36" height="0.82" width="13.95" y="59.52" x="2.48" class="cls-7"/>
+  <rect id="svg_26" ry="0.36" rx="0.36" height="0.82" width="13.95" y="62.29" x="2.48" class="cls-7"/>
+  <rect id="svg_27" ry="0.36" rx="0.36" height="0.82" width="13.95" y="65.06" x="2.48" class="cls-7"/>
+  <rect id="svg_28" ry="0.36" rx="0.36" height="0.82" width="13.95" y="67.82" x="2.48" class="cls-7"/>
+  <rect id="svg_29" ry="0.36" rx="0.36" height="0.82" width="13.95" y="70.59" x="2.48" class="cls-7"/>
+  <rect id="svg_30" ry="2.93" rx="2.93" height="46.25" width="15.22" y="28.24" x="77.94" class="cls-2"/>
+  <rect id="svg_31" ry="0.36" rx="0.36" height="0.82" width="13.95" y="31.86" x="78.57" class="cls-7"/>
+  <rect id="svg_32" ry="0.36" rx="0.36" height="0.82" width="13.95" y="34.63" x="78.57" class="cls-7"/>
+  <rect id="svg_33" ry="0.36" rx="0.36" height="0.82" width="13.95" y="37.4" x="78.57" class="cls-7"/>
+  <rect id="svg_34" ry="0.36" rx="0.36" height="0.82" width="13.95" y="40.16" x="78.57" class="cls-7"/>
+  <rect id="svg_35" ry="0.36" rx="0.36" height="0.82" width="13.95" y="42.93" x="78.57" class="cls-7"/>
+  <rect id="svg_36" ry="0.36" rx="0.36" height="0.82" width="13.95" y="45.69" x="78.57" class="cls-7"/>
+  <rect id="svg_37" ry="0.36" rx="0.36" height="0.82" width="13.95" y="48.46" x="78.57" class="cls-7"/>
+  <rect id="svg_38" ry="0.36" rx="0.36" height="0.82" width="13.95" y="51.23" x="78.57" class="cls-7"/>
+  <rect id="svg_39" ry="0.36" rx="0.36" height="0.82" width="13.95" y="53.99" x="78.57" class="cls-7"/>
+  <rect id="svg_40" ry="0.36" rx="0.36" height="0.82" width="13.95" y="56.76" x="78.57" class="cls-7"/>
+  <rect id="svg_41" ry="0.36" rx="0.36" height="0.82" width="13.95" y="59.52" x="78.57" class="cls-7"/>
+  <rect id="svg_42" ry="0.36" rx="0.36" height="0.82" width="13.95" y="62.29" x="78.57" class="cls-7"/>
+  <rect id="svg_43" ry="0.36" rx="0.36" height="0.82" width="13.95" y="65.06" x="78.57" class="cls-7"/>
+  <rect id="svg_44" ry="0.36" rx="0.36" height="0.82" width="13.95" y="67.82" x="78.57" class="cls-7"/>
+  <rect id="svg_45" ry="0.36" rx="0.36" height="0.82" width="13.95" y="70.59" x="78.57" class="cls-7"/>
+  <rect id="svg_46" height="3.22" width="3.5" y="68.49" x="42.08" class="cls-2"/>
+  <rect id="svg_47" height="3.22" width="3.5" y="68.49" x="50.02" class="cls-2"/>
+  <path id="svg_48" d="m54.41,52.19a2.31,2.31 0 0 1 2.45,-0.33c1.82,1 0.48,3.24 0.48,3.24s-3.59,4.16 -8.75,4.16s-8.7,-1.68 -10.77,-4.74c-1.82,-2.72 2.11,-3.94 3.12,-2.52a9.36,9.36 0 0 0 6.06,3.31c2.61,0.07 4.63,0 7.41,-3.12z" class="cls-5"/>
+  <path id="svg_49" d="m26.85,2.14l-0.85,2.49a3,3 0 1 1 -5.72,-0.09a3,3 0 0 1 1.21,-1.54l0.89,-2.5a5.13,5.13 0 0 0 -1,9.89a5.07,5.07 0 0 0 6.51,-3.07a5.16,5.16 0 0 0 -1.04,-5.18z" class="cls-8"/>
+  <path id="svg_50" d="m24.59,33.57l-2.74,1.18l-5.32,-12.55a1.25,1.25 0 0 1 0.65,-1.64l0.46,-0.2a1.23,1.23 0 0 1 1.63,0.66l5.32,12.55z" class="cls-9"/>
+  <path id="svg_51" d="m19.35,22.6l-2.83,-0.93l4.17,-13a1.24,1.24 0 0 1 1.56,-0.8l0.48,0.16a1.25,1.25 0 0 1 0.8,1.57l-4.18,13z" class="cls-9"/>
+  <path id="svg_52" d="m21.49,32.32l3.17,0a1.46,1.46 0 0 1 1.46,1.46l0,1.3a0,0 0 0 1 0,0l-6.07,0a0,0 0 0 1 0,0l0,-1.33a1.44,1.44 0 0 1 1.44,-1.43z" class="cls-2"/>
+  <ellipse id="svg_53" ry="1.13" rx="1.12" cy="9.58" cx="21.97" class="cls-8"/>
+  <ellipse id="svg_54" ry="1.13" rx="1.12" cy="21.73" cx="18.06" class="cls-8"/>
+  <path id="svg_55" d="m68.15,2.17l0.85,2.49a3,3 0 1 0 5.72,-0.09a3,3 0 0 0 -1.21,-1.57l-0.89,-2.47a5.13,5.13 0 0 1 1,9.89a5.07,5.07 0 0 1 -6.51,-3.07a5.16,5.16 0 0 1 1.04,-5.18z" class="cls-8"/>
+  <path id="svg_56" d="m70.41,33.6l2.74,1.18l5.32,-12.55a1.25,1.25 0 0 0 -0.65,-1.64l-0.46,-0.2a1.23,1.23 0 0 0 -1.63,0.66l-5.32,12.55z" class="cls-9"/>
+  <path id="svg_57" d="m75.65,22.62l2.83,-0.93l-4.17,-13a1.24,1.24 0 0 0 -1.56,-0.8l-0.48,0.16a1.25,1.25 0 0 0 -0.8,1.57l4.18,13z" class="cls-9"/>
+  <ellipse id="svg_58" ry="1.13" rx="1.12" cy="9.61" cx="73.03" class="cls-8"/>
+  <ellipse id="svg_59" ry="1.13" rx="1.12" cy="21.76" cx="76.94" class="cls-8"/>
+  <path id="svg_60" transform="rotate(-180 144.5,67.3199996948242) " d="m213.72,99.6l6.07,0a0,0 0 0 1 0,0l0,1.3a1.46,1.46 0 0 1 -1.46,1.42l-3.17,0a1.44,1.44 0 0 1 -1.44,-1.44l0,-1.28a0,0 0 0 1 0,0z" class="cls-2"/>
+ </g>
+</svg>
