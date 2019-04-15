@@ -1,7 +1,7 @@
 {
-  "name": "MyCode",
+  "name": "MyQode",
   "version": "1.2.5",
-  "description": "MyCode for pc!",
+  "description": "MyQode for pc!",
   "homepage": "http://www.robobloq.com",
   "main": "main.js",
   "build": {
@@ -12,14 +12,14 @@
       }
     ],
     "appId": "com.robobloq.pc",
-    "productName": "MyCode",
-    "copyright": "Copyright © 2017 MyCode",
+    "productName": "MyQode",
+    "copyright": "Copyright © 2017 MyQode",
     "fileAssociations": {
       "ext": "bloq",
-      "name": "MyCode"
+      "name": "MyQode"
     },
     "directories": {
-      "output": "../outApp"
+      "output": "releases"
     },
     "mac": {
       "target": [
