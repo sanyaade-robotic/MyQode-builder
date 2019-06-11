@@ -27,7 +27,7 @@ const shouldQuit = app.makeSingleInstance((commandLine, workingDirectory) => {
     if (mainWindow) {
         if (commandLine.length > 1){
 			mainWindow.webContents.send('open-file', commandLine[1]);
-		}
+        }
         if (mainWindow.isMinimized()) {
             mainWindow.restore();
         }
@@ -66,9 +66,22 @@ if (shouldQuit) {
             event.preventDefault()
         });
         mainWindow.webContents.on('crashed', () => mainWindow.reload());
-        mainWindow.on('closed', () => {
-          mainWindow = null;
+        
+        mainWindow.on('close', e => {
+            ipcMain.once('close-mainwindow', (event, arg) => {
+                if (arg === 'close') {
+                    mainWindow.destroy();
+                }
+            });
+            ipcMain.once('close-atonce', (event, arg) => {
+                if (arg === 'close') {
+                    mainWindow.destroy();
+                }
+            });
+            e.sender.send('close-mainwindow-reply', 'close');
+            e.preventDefault();
         });
+        
         mainWindow.webContents.on('did-finish-load', function() {
             if (filepath) {
                 mainWindow.webContents.send('open-file', filepath);
