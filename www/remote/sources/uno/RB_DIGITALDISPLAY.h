@@ -11,9 +11,9 @@
 {
   public : 
         RB_DIGITALDISPLAY(void);
-		    RB_DIGITALDISPLAY(uint8_t port);
+		RB_DIGITALDISPLAY(uint8_t port);
         void RB_DIGITALDISPLAY_Init(void);
-		    void RB_DIGITALDISPLAY_SET(uint8_t Address,uint8_t Data);
-   
+		void RB_DIGITALDISPLAY_SET(uint8_t Address,uint8_t Data);
+        void Clear(void);
 };
 #endif 

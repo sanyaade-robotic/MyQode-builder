@@ -40,3 +40,15 @@ void RB_DIGITALDISPLAY::RB_DIGITALDISPLAY_SET(uint8_t Address,uint8_t Data)
 	 RB_SoftI2CMaster::I2C_Write(DIGITAL_tab[Data&0x7F]); 
    RB_SoftI2CMaster::I2C_Stop();
 }
+
+/*
+   Clear All Digital Display
+*/
+void RB_DIGITALDISPLAY::Clear(void)
+{
+	RB_DIGITALDISPLAY_SET(0X68+2*0,0X10);
+	RB_DIGITALDISPLAY_SET(0X68+2*1,0X10);
+	RB_DIGITALDISPLAY_SET(0X68+2*2,0X10);
+	RB_DIGITALDISPLAY_SET(0X68+2*3,0X10);
+	
+}
