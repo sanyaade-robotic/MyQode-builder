@@ -32,6 +32,8 @@
 #include "RB_GYRO.h"
 #include "RB_TOUCHSENSOR.h"
 
+#include "RB_DIGITALDISPLAY.h"
+#include "RB_TEMPERATURE.h"
 
 #if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
 #include "RB_ENCONDERMOTOR.h"
@@ -61,6 +63,11 @@
 #define   RGBLEDMatrix_Set                    0x1B          //RGB矩阵屏设置
 #define   MP3_Set                             0x1C          //MP3设置
 #define   TouchSensor_Set                     0x1D          //触摸传感器主动上报设置
+#define   DigitalDisplay_Set                  0x1E          //4段数码管显示设置
+#define   RGBLEDArray_Set                     0x1F          //4个RGBLED显示设置
+
+
+
 #define   UlSensorDistance_Read               0xA1          //超声波距离读取
 #define   Button_Read                         0xA2          //按键读取
 #define   Power_Read                          0xA3          //读取电压
@@ -72,6 +79,8 @@
 #define   GyroSensor_Read                     0xA9          //陀螺仪传感器数据读取
 #define   ColorSensor_Read                    0XAA          //颜色传感器读取
 #define   TouchSensor_Read                    0XAB          //触摸传感器读取
+#define   TemptureSensors_Read                0XAC          //2路温度传感读取
+#define   Line_Follower_Array_Read            0XAD          //6路巡线传感器读取
 
 
 
@@ -81,7 +90,7 @@
 
 #define DeviceType                            1          //主控类型          
 #define HardwareVersion                       2          //硬件版本
-#define SoftwareVersion                       10         //软件版本     
+#define SoftwareVersion                       11        //软件版本     
 
 
 /*
