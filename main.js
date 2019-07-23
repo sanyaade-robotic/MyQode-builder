@@ -6,6 +6,8 @@ const isDev = require('electron-is-dev');
 const path = require('path');
 const url = require('url');
 
+app.disableHardwareAcceleration();
+
 autoUpdater.logger = log;
 autoUpdater.logger.transports.file.level = 'info';
 autoUpdater.autoDownload = false;
