@@ -6,8 +6,6 @@ const isDev = require('electron-is-dev');
 const path = require('path');
 const url = require('url');
 
-app.disableHardwareAcceleration();
-
 autoUpdater.logger = log;
 autoUpdater.logger.transports.file.level = 'info';
 autoUpdater.autoDownload = false;
@@ -41,6 +39,11 @@ if (shouldQuit) {
     app.quit();
 } else {
     app.on('ready', () => {
+        app.commandLine.appendSwitch('ignore-gpu-blacklist', 'true');
+        app.commandLine.appendSwitch('enable-zero-copy', 'true');
+        app.commandLine.appendSwitch('disable-software-rasterizer', 'false');
+        app.commandLine.appendSwitch('enable-native-gpu-memory-buffers', 'true');
+        app.commandLine.appendSwitch('no-proxy-server');
         /* 主窗口设置 */
         const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize;
         mainWindow = new BrowserWindow({
