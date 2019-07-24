@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 811:
+/***/ 789:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48,7 +48,7 @@ var _controls = __webpack_require__(83);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _stage = __webpack_require__(129);
+var _stage = __webpack_require__(127);
 
 var _stage2 = _interopRequireDefault(_stage);
 
@@ -160,5 +160,5 @@ _reactDom2.default.render(_react2.default.createElement(App, null), appTarget);
 
 /***/ })
 
-},[811]);
+},[789]);
 //# sourceMappingURL=compatibilitytesting.js.map
