@@ -20,7 +20,6 @@
     },
     "directories": {
       "buildResources": "build",
-      "files": ["**/*", "build/icon.*"],
       "output": "releases"
     },
     "mac": {
@@ -67,6 +66,7 @@
       }
     ],
     "files": [
+      "build/icon.*",
       "**/*",
       "!test/*",
       "!www/exec/*",
