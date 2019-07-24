@@ -19,6 +19,8 @@
       "name": "MyQode"
     },
     "directories": {
+      "buildResources": "build",
+      "files": ["**/*", "build/icon.*"],
       "output": "releases"
     },
     "mac": {
