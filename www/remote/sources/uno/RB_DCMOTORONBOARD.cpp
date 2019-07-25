@@ -116,28 +116,3 @@ void RB_DcmotorOnBoard::stop(void)
      RB_DcmotorOnBoard::RB_DcmotorOnBoardM1_Run(0);
      RB_DcmotorOnBoard::RB_DcmotorOnBoardM2_Run(0);
   }
-
- void RB_DcmotorOnBoard::SetSpeed( short Left_Speed, short Right_Speed)
- {    
-     Left_Speed = constrain(Left_Speed,-250,250);
-     Right_Speed= constrain(Right_Speed,-250,250);
-     if(Left_Speed<0)
-       {
-           analogWrite(MOTOR_PWM0, abs(Left_Speed));
-           analogWrite(MOTOR_PWM1, 0);  
-       }
-     else {
-           analogWrite(MOTOR_PWM1, abs(Left_Speed));
-           analogWrite(MOTOR_PWM0, 0);  
-     }
-     if(Right_Speed<0)
-     {
-        OCR1A = 0 ; OCR1B = abs(Right_Speed); 
-     }
-     else 
-     { 
-         OCR1B = 0 ; OCR1A = abs(Right_Speed); 
-     } 
-
-  }
-  

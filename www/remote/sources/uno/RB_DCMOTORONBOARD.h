@@ -14,7 +14,6 @@ class RB_DcmotorOnBoard
       void   RB_DcmotorOnBoardM2_Run(int32_t speed);
       void   run(int32_t speed1,int32_t speed2);
       void   stop(void);
-      void  RB_DcmotorOnBoard::SetSpeed( short Left_Speed, short Right_Speed);
     private:
       int32_t   _M2_Speed  ;
       int32_t   _M1_Speed  ;

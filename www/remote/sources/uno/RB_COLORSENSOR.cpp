@@ -325,55 +325,24 @@ if (!_tcs34725Initialised) begin();
      //*******************CheckColor
      s = s *255.0;
      v = v *255.0;
-    /*
-    0: 无
-    1：红
-    2：绿
-    3：蓝
-    4：黄
-    5：紫
-    6：白
-    */
+
      dir = (350- (white+red*0.3+green*0.3+blue*0.4));
      if (dir < 80){
           if (v > 255){
-           if (20 < h && h < 50 && 80 < s) return 4;
-           if (0 < h && h <= 13 || (0 == h && v > 120)) return 1;
-           if (345 < h && h < 360) return 1;
-           if (220 < h && h < 345) return 5;
-           if (160 < h && h <= 220) return blue;
-           if (h > 50 && h <= 80 && dir <= 60 && v < 270) return 6;
-           if (h > 50 && h <= 127 && v > 270) return 2;
+           if (20 < h && h < 50 && 80 < s) return 1;
+           if (0 < h && h <= 13 || (0 == h && v > 120)) return 2;
+           if (345 < h && h < 360) return 2;
+           if (220 < h && h < 345) return 3;
+           if (160 < h && h <= 220) return 4;
+           if (h > 50 && h <= 80 && dir <= 60 && v < 270) return 5;
+           if (h > 50 && h <= 127 && v > 270) return 6;
                 
            }
            if (v < 270){
-              if (h > 15 && h <= 30 && dir <= 60) return 6;
-              if (220 < h && h < 345 || h <= 60) return 5;
+              if (h > 15 && h <= 30 && dir <= 60) return 5;
+              if (220 < h && h < 345 || h <= 60) return 3;
            }
        }
-	  if (dir < 97){ 
-	       if (h > 50 && h <= 127 && v > 270) return 2;
-	  }
        return 0;
-    }
-
-   unsigned char RB_COLORSENSOR::GetColor_Game(void)
-  {
-     
-    uint16_t  red,green,blue,white;  
-    uint16_t  color_value=0;	
-    getRawData(&red,&green,&blue,&white);
-    
-    if((red>40)&&(green<40)&&(blue<40)&&((red-green)>25)){
-        color_value = 1;    //红
-    }        
-    if((green>45)&&(red<45)&&(blue<45)&&((green-red)>15)){
-        color_value = 2;    //绿
-    }
-    if((blue>30)&&(red<35)&&(green<35)&&((blue-green)>3)){
-        color_value = 3;    //蓝 
-    } 
-    return  color_value;
-   }
-	
+    }  
         

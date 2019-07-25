@@ -104,7 +104,6 @@ class RB_COLORSENSOR :public RB_SoftI2CMaster
    uint16_t  getRGBWvalue(void);
    unsigned short RB_COLORSENSOR::RGBToHSV(float *h,float *s,float *v);
    unsigned char RB_COLORSENSOR::GetColor(void);
-   unsigned char RB_COLORSENSOR::GetColor_Game(void);
    
  private:
   boolean   _tcs34725Initialised;

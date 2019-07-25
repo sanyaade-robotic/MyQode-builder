@@ -19,7 +19,7 @@ struct RB_RGB
 
 
 
-class RB_RGBLed:public RB_Port
+class RB_RGBLed
 {
    public:
        /*

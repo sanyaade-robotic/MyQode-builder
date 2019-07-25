@@ -52,7 +52,7 @@ uint16_t  RB_TOUCHSENSOR::RB_TOUCHSENSOR_ReadValue(void)
       touchvalue = ((uint16_t)touchsensorarray[1]*256)+touchsensorarray[2];
    }
   else
-	  touchvalue =1;
+	  touchvalue =0;
   return touchvalue;
 }
 

@@ -26,15 +26,7 @@
 #define   RGBLED_Matraix                 0X0C
 #define   Color_Sensor                   0X0D
 #define   Gyro_Sensor                    0X0E
-#define   Touch_Sensor                   0X0F  
-
-#define   Tempture_Sensors               0X10
-#define   Line_Follower_Array_Sensors    0X11
-#define   DigitalDisplay_Device          0X12 
-#define   RGBLED_Array_Device            0X13
-
-
-        
+#define   Touch_Sensor                   0X0F          
 
 
 #if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
