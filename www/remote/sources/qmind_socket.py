@@ -94,3 +94,45 @@ class Qmind:
         time.sleep(0.3)
         result = post_request('/gsSensingColorGrey', values)
         return result
+
+    def shows_digital1(self, port, num):
+        d = {'event': 'shows_digital1', 'data': {'PORT': port, 'NUMBER': num}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+    
+    def shows_digital2(self, port, mins, sec):
+        d = {'event': 'shows_digital2', 'data': {'PORT': port, 'M': mins, 'S': sec}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+    def shows_digital3(self, port):
+        d = {'event': 'shows_digital3', 'data': {'PORT': port}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+    def shows_digital4(self, port):
+        d = {'event': 'shows_digital4', 'data': {'PORT': port}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+    def set_led_animal(self, port, animalType):
+        d = {'event': 'set_led_animal', 'data': {'PORT': port, 'ANIMATION': animalType}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+    def set_led_color(self, port, location, r, g, b):
+        d = {'event': 'set_led_color', 'data': {'PORT': port, 'LEDNUM': location, 'RED': r, 'GREEN': g, 'BLUE': b}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+    def set_led_color(self, port, location):
+        d = {'event': 'set_led_color', 'data': {'PORT': port, 'LEDNUM': location}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)

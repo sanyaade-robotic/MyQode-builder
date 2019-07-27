@@ -128,6 +128,14 @@ class Qmind:
         result = post_request('/get_temperature', values)
         result = float(result)
         return result
+
+    def get_temperature2(self, port, probe):
+        values = {'PORT': port, 'PROBE': probe}
+        time.sleep(0.3)
+        result = post_request('/get_temperature2', values)
+        result = float(result)
+        return result
+
     # 获取湿度传感器的值
     def get_humidity(self,port):
         values = {'PORT': port}
@@ -166,3 +174,38 @@ class Qmind:
         result = post_request('/gsSensingColorGrey', values)
         result = float(result)
         return result
+    # 设置数码管
+    def shows_digital1(self, port, num):
+        values = {'PORT': port, 'NUMBER': num}
+        time.sleep(0.3)
+        post_request('/shows_digital1', values)
+    
+    def shows_digital2(self, port, mins, sec):
+        values = {'PORT': port, 'M': mins, 'S': sec}
+        time.sleep(0.3)
+        post_request('/shows_digital2', values)
+
+    def shows_digital3(self, port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        post_request('/shows_digital3', values)
+
+    def shows_digital4(self, port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        post_request('/shows_digital4', values)
+
+    def set_led_animal(self, port, animalType):
+        values = {'PORT': port, 'ANIMATION': animalType}
+        time.sleep(0.3)
+        post_request('/set_led_animal', values)
+
+    def set_led_color(self, port, location, r, g, b):
+        values = {'PORT': port, 'LEDNUM': location, 'RED': r, 'GREEN': g, 'BLUE': b}
+        time.sleep(0.3)
+        post_request('/set_led_color', values)
+
+    def close_led(self, port, location):
+        values = {'PORT': port, 'LEDNUM': location}
+        time.sleep(0.3)
+        post_request('/close_led', values)
