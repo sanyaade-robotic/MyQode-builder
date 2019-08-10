@@ -195,8 +195,8 @@ class Qmind:
         time.sleep(0.3)
         post_request('/shows_digital4', values)
 
-    def set_led_animal(self, port, animalType):
-        values = {'PORT': port, 'ANIMATION': animalType}
+    def set_led_animal(self, port, animalType, speed):
+        values = {'PORT': port, 'ANIMATION': animalType, 'SPEED': speed}
         time.sleep(0.3)
         post_request('/set_led_animal', values)
 

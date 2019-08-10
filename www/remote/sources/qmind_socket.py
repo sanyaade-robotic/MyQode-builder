@@ -119,8 +119,8 @@ class Qmind:
         client.send(s)
         time.sleep(1)
 
-    def set_led_animal(self, port, animalType):
-        d = {'event': 'set_led_animal', 'data': {'PORT': port, 'ANIMATION': animalType}}
+    def set_led_animal(self, port, animalType, speed):
+        d = {'event': 'set_led_animal', 'data': {'PORT': port, 'ANIMATION': animalType, 'SPEED': speed}}
         s = json.dumps(d)
         client.send(s)
         time.sleep(1)
