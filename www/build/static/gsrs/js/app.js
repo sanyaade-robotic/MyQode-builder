@@ -9,7 +9,7 @@ var LOCAL ={};
 var SY ={};
 SY.Client = 'pc';
 SEP.os ={};
-SEP.os.version = "1.3.2" ; //version
+SEP.os.version = "1.3.1" ; //version
 SEP.os.type = 1 ; // electron:1 ; web: 2; PC调用 GO接口： 3；（自动修正值，不用改）
 
 SEP.appInit = function () {
@@ -58,6 +58,7 @@ SEP.initType =function() {
 SEP.initOther =function() {
     const EventEmitter = require('events');
     class MyEmitter extends EventEmitter {};
+    SEP.Node.process = process;
     SEP.Node.fs = require('fs');
     SEP.Node.http = require('http');
     SEP.Node.exec = require("child_process").exec;
