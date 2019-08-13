@@ -59,9 +59,10 @@ if (shouldQuit) {
         }));
         mainWindow.webContents.once('dom-ready', () => {
             // 开发环境开启调试工具
-            if (isDev) {
-              mainWindow.webContents.openDevTools();
-            }
+            // if (isDev) {
+            //   mainWindow.webContents.openDevTools();
+            // }
+            mainWindow.webContents.openDevTools();
             splashWindow.destroy();
             if (splashWindow && !splashWindow.isDestroyed()) {
                 splashWindow.hide();
