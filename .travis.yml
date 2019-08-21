@@ -39,7 +39,7 @@ before_script:
   - rm -rf ./www/remote/sources/Python
 
 script:
-  - electron-builder
+  - npx electron-builder
 
 deploy:
   provider: releases
