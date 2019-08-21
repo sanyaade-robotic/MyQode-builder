@@ -170,4 +170,52 @@ app.post('/gs_sensing_mp3Play3', async (req, res)=>{
     res.json(parseFloat(result));
 });
 
+app.post('/shows_digital1', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_shows_digital1(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/shows_digital2', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_shows_digital2(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/shows_digital3', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_shows_digital3(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/shows_digital4', async (req, res) => {
+  const data = req.body;
+  const result = await SEP.RobotBlocks.gs_shows_digital4(data);
+  res.json(parseFloat(result));
+});
+
+app.post('/set_led_animal', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_looks_setledanimal(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/set_led_color', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_looks_setledcolor(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/close_led', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_looks_close_led(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/get_temperature2', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_sensing_temperatureValue2(data);
+    res.json(parseFloat(result));
+});
+
 app.listen(12345, '127.0.0.1', () => console.log('Example app listening on port 12345!'));
