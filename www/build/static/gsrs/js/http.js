@@ -86,6 +86,15 @@ app.post('/get_line_patrol', async (req, res) => {
     const result = await SEP.RobotBlocks.gs_sensing_linePatrolValue(data);
     res.json(parseFloat(result));
 });
+
+/**
+ * 获取巡线传感器的值-
+ */
+app.post('/get_line_patrol2', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_sensing_linePatrolValue2(data);
+    res.json(parseFloat(result));
+});
 /**
  * 获取声音传感器的值-
  */
