@@ -70,6 +70,12 @@ class Qmind:
     def get_line_patrol(self, port):
         return 0
 
+    def get_line_patrol2(self, port, left, right):
+        values = {'PORT': port, 'Left': left, 'Right': right}
+        time.sleep(0.3)
+        result = post_request('/gs_sensing_linePatrolValue2', values)
+        return result
+
     def get_sound(self, port):
         return 0
 
@@ -89,8 +95,85 @@ class Qmind:
         result = post_request('/gsSensingColor', values)
         return result
 
-    def gsSensingColorGrey(self,port):
+    # 获取触摸传感器
+    def gsGetTouchButtonValue4(self, key):
+        values = {'Key': key}
+        time.sleep(0.3)
+        result = post_request('/gsGetTouchButtonValue4', values)
+        return result
+
+    def gsGetTouchButtonValue3(self, port):
+        d = {'event': 'gsGetTouchButtonValue3', 'data': {'PORT': port}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+    # 读取2路摇杆传感器数据
+    def gs_sensing_rocker(self,port):
         values = {'PORT': port}
         time.sleep(0.3)
-        result = post_request('/gsSensingColorGrey', values)
+        result = post_request('/gs_sensing_rocker', values)
         return result
+
+     # 获取螺旋电位器数据
+    def gs_sensing_spiral_potentiometer(self,port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        result = post_request('/gs_sensing_spiral_potentiometer', values)
+        return result
+
+     # 获取气体传感器数据
+    def gs_sensing_gas(self,port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        result = post_request('/gs_sensing_gas', values)
+        return result
+
+     # 获取火焰传感器数据
+    def gs_sensing_flame(self,port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        result = post_request('/gs_sensing_flame', values)
+        return result
+
+     def shows_digital1(self, port, num):
+        d = {'event': 'shows_digital1', 'data': {'PORT': port, 'NUMBER': num}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+    def shows_digital2(self, port, mins, sec):
+        d = {'event': 'shows_digital2', 'data': {'PORT': port, 'M': mins, 'S': sec}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+    def shows_digital3(self, port):
+        d = {'event': 'shows_digital3', 'data': {'PORT': port}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+    def shows_digital4(self, port):
+        d = {'event': 'shows_digital4', 'data': {'PORT': port}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+     def set_led_animal(self, port, animalType, speed):
+        d = {'event': 'set_led_animal', 'data': {'PORT': port, 'ANIMATION': animalType, 'SPEED': speed}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+    def set_led_color(self, port, location, r, g, b):
+        d = {'event': 'set_led_color', 'data': {'PORT': port, 'LEDNUM': location, 'RED': r, 'GREEN': g, 'BLUE': b}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)
+
+    def set_led_color(self, port, location):
+        d = {'event': 'set_led_color', 'data': {'PORT': port, 'LEDNUM': location}}
+        s = json.dumps(d)
+        client.send(s)
+        time.sleep(1)

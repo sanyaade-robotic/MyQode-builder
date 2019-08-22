@@ -198,9 +198,9 @@ app.post('/shows_digital3', async (req, res) => {
 });
 
 app.post('/shows_digital4', async (req, res) => {
-  const data = req.body;
-  const result = await SEP.RobotBlocks.gs_shows_digital4(data);
-  res.json(parseFloat(result));
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_shows_digital4(data);
+    res.json(parseFloat(result));
 });
 
 app.post('/set_led_animal', async (req, res) => {
@@ -224,6 +224,42 @@ app.post('/close_led', async (req, res) => {
 app.post('/get_temperature2', async (req, res) => {
     const data = req.body;
     const result = await SEP.RobotBlocks.gs_sensing_temperatureValue2(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/gsGetTouchButtonValue4', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gsGetTouchButtonValue4(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/gsGetTouchButtonValue3', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gsGetTouchButtonValue3(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/gs_sensing_rocker', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_sensing_rocker(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/gs_sensing_spiral_potentiometer', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_sensing_spiral_potentiometer(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/gs_sensing_gas', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_sensing_gas(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/gs_sensing_flame', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_sensing_flame(data);
     res.json(parseFloat(result));
 });
 

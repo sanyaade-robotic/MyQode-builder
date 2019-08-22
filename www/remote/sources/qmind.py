@@ -107,6 +107,13 @@ class Qmind:
         result = post_request('/get_line_patrol', values)
         result = float(result)
         return result
+
+    def get_line_patrol2(self, port, left, right):
+        values = {'PORT': port, 'Left': left, 'Right': right}
+        time.sleep(0.3)
+        result = post_request('/get_line_patrol2', values)
+        result = float(result)
+        return result
     # 获取声音传感器的值
     def get_sound(self, port):
         values = {'PORT': port}
@@ -128,6 +135,14 @@ class Qmind:
         result = post_request('/get_temperature', values)
         result = float(result)
         return result
+    
+    def get_temperature2(self, port, probe):
+        values = {'PORT': port, 'PROBE': probe}
+        time.sleep(0.3)
+        result = post_request('/get_temperature2', values)
+        result = float(result)
+        return result
+
     # 获取湿度传感器的值
     def get_humidity(self,port):
         values = {'PORT': port}
@@ -166,3 +181,84 @@ class Qmind:
         result = post_request('/gsSensingColorGrey', values)
         result = float(result)
         return result
+    
+    # 获取触摸传感器
+    def gsGetTouchButtonValue4(self, key):
+        values = {'Key': key}
+        time.sleep(0.3)
+        result = post_request('/gsGetTouchButtonValue4', values)
+        result = float(result)
+        return result
+
+    def gsGetTouchButtonValue3(self,port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        post_request('/gsGetTouchButtonValue3', values)
+
+    # 读取2路摇杆传感器数据
+    def gs_sensing_rocker(self,port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        result = post_request('/gs_sensing_rocker', values)
+        result = float(result)
+        return result
+
+     # 获取螺旋电位器数据
+    def gs_sensing_spiral_potentiometer(self,port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        result = post_request('/gs_sensing_spiral_potentiometer', values)
+        # result = float(result)
+        return result
+
+     # 获取气体传感器数据
+    def gs_sensing_gas(self,port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        result = post_request('/gs_sensing_gas', values)
+        result = float(result)
+        return result
+
+     # 获取火焰传感器数据
+    def gs_sensing_flame(self,port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        result = post_request('/gs_sensing_flame', values)
+        result = float(result)
+        return result
+
+    # 设置数码管
+    def shows_digital1(self, port, num):
+        values = {'PORT': port, 'NUMBER': num}
+        time.sleep(0.3)
+        post_request('/shows_digital1', values)
+
+    def shows_digital2(self, port, mins, sec):
+        values = {'PORT': port, 'M': mins, 'S': sec}
+        time.sleep(0.3)
+        post_request('/shows_digital2', values)
+
+    def shows_digital3(self, port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        post_request('/shows_digital3', values)
+
+    def shows_digital4(self, port):
+        values = {'PORT': port}
+        time.sleep(0.3)
+        post_request('/shows_digital4', values)
+
+    def set_led_animal(self, port, animalType, speed):
+        values = {'PORT': port, 'ANIMATION': animalType, 'SPEED': speed}
+        time.sleep(0.3)
+        post_request('/set_led_animal', values)
+
+    def set_led_color(self, port, location, r, g, b):
+        values = {'PORT': port, 'LEDNUM': location, 'RED': r, 'GREEN': g, 'BLUE': b}
+        time.sleep(0.3)
+        post_request('/set_led_color', values)
+
+    def close_led(self, port, location):
+        values = {'PORT': port, 'LEDNUM': location}
+        time.sleep(0.3)
+        post_request('/close_led', values)
