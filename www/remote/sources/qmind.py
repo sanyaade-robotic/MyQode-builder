@@ -196,19 +196,26 @@ class Qmind:
         post_request('/gsGetTouchButtonValue3', values)
 
     # 读取2路摇杆传感器数据
-    def gs_sensing_rocker(self,port):
-        values = {'PORT': port}
+    def gs_sensing_rocker(self,port, coord):
+        values = {'PORT': port, 'COORD': coord}
         time.sleep(0.3)
         result = post_request('/gs_sensing_rocker', values)
         result = float(result)
         return result
 
+    # 读取2路摇杆传感器数据
+    def gs_sensing_rocker2(self,port, coord, flag):
+        values = {'PORT': port, 'COORD': coord, 'FLAG': flag}
+        time.sleep(0.3)
+        result = post_request('/gs_sensing_rocker2', values)
+        result = float(result)
+        return result
      # 获取螺旋电位器数据
     def gs_sensing_spiral_potentiometer(self,port):
         values = {'PORT': port}
         time.sleep(0.3)
         result = post_request('/gs_sensing_spiral_potentiometer', values)
-        # result = float(result)
+        result = float(result)
         return result
 
      # 获取气体传感器数据

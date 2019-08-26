@@ -245,6 +245,12 @@ app.post('/gs_sensing_rocker', async (req, res) => {
     res.json(parseFloat(result));
 });
 
+app.post('/gs_sensing_rocker2', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_sensing_rocker2(data);
+    res.json(parseFloat(result));
+});
+
 app.post('/gs_sensing_spiral_potentiometer', async (req, res) => {
     const data = req.body;
     const result = await SEP.RobotBlocks.gs_sensing_spiral_potentiometer(data);
