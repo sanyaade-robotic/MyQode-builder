@@ -269,4 +269,10 @@ app.post('/gs_sensing_flame', async (req, res) => {
     res.json(parseFloat(result));
 });
 
+app.post('/gs_sensing_slider', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_sensing_slider(data);
+    res.json(parseFloat(result));
+});
+
 app.listen(12345, '127.0.0.1', () => console.log('Example app listening on port 12345!'));
