@@ -41,6 +41,8 @@
 #include "RB_FLAMESENSOR.h"
 #include "RB_GASSENSOR.h"
 #include "RB_POTENTIOMETER.h"
+#include "RB_LINEPOTENTIOMETER.h"
+
 
 #if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)    //Qoooers
 #include "RB_ENCONDERMOTOR.h" 
@@ -128,13 +130,11 @@
 #define   TouchSensor_Read                    0XAB          //触摸传感器读取
 #define   TemptureSensors_Read                0XAC          //2路温度传感读取
 #define   Line_Follower_Array_Read            0XAD          //6路巡线传感器读取
-
-
-
 #define   JoyStickSensor_Read                 0XAE          //遥感读取
 #define   FlameSensor_Read                    0XAF          //火焰读取
 #define   GasSensor_Read                      0XB0          //气体读取      
 #define   Potentimeter_Read                   0XB1          //电位器读取
+#define   LinePotentimeter_Read               0XB2          //滑动电位器读取
 
 
 

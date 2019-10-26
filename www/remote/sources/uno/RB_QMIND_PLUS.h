@@ -39,6 +39,8 @@
 #include "RB_FLAMESENSOR.h"
 #include "RB_GASSENSOR.h"
 #include "RB_POTENTIOMETER.h"
+#include "RB_LINEPOTENTIOMETER.h"
+
 
 #if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)    //Qoooers
 #include "RB_ENCONDERMOTOR.h" 

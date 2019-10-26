@@ -269,9 +269,9 @@ app.post('/gs_sensing_flame', async (req, res) => {
     res.json(parseFloat(result));
 });
 
-app.post('/gs_sensing_slider', async (req, res) => {
+app.post('/gs_sensing_linePotentiometer', async (req, res) => {
     const data = req.body;
-    const result = await SEP.RobotBlocks.gs_sensing_slider(data);
+    const result = await SEP.RobotBlocks.gs_sensing_linePotentiometer(data);
     res.json(parseFloat(result));
 });
 

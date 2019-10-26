@@ -37,7 +37,8 @@
 #define   JoyStick_Sensor                0X14  
 #define   Flame_Sensor                   0X15
 #define   Gas_Sensor                     0X16
-#define   Potentimeter_Sensor                   0X17 
+#define   Potentimeter_Sensor            0X17 
+#define   Line_Potentimeter_Sensor       0X18
 
 
         
