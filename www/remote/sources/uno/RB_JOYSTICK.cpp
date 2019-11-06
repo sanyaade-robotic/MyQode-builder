@@ -18,9 +18,9 @@ RB_JOYSTICK::RB_JOYSTICK(void)
 
 RB_JOYSTICK::RB_JOYSTICK(uint8_t port):RB_Port(port)
 {
+	_SigPin_X  =  RBPort[port].dat;
+	_SigPin_Y  =  RBPort[port].clk;
 	
-	_SigPin_X  =  RBPort[port].clk;
-	_SigPin_Y  =  RBPort[port].dat;
 }
 
 void RB_JOYSTICK::SetPin(uint8_t sigpin_x,uint8_t sigpin_y)
@@ -38,9 +38,13 @@ int16_t RB_JOYSTICK::ReadJoystickX(void)
 	x_value = analogRead(_SigPin_X);
 	
 	x_value = (x_value-CENTER_VALUE_X);
-	if(x_value > 0 ) x_value = x_value*(-10)/6;
-	else             x_value = x_value*(-7)/10;
+	if(x_value > 0 ) x_value = x_value*(11)/6;
+	else             x_value = x_value*(7)/10;
 	
+	x_value  = x_value + _X_offset;
+	if(x_value>480)x_value = 480;
+	else if(x_value<(-480))x_value=-480;
+	else if(((-18)<x_value)&&(x_value<18))x_value = 0;
 	return x_value;
 		
 }
@@ -51,10 +55,15 @@ int16_t RB_JOYSTICK::ReadJoystickY(void)
 	int16_t  y_value = 0;
 	pinMode(_SigPin_Y,INPUT);
 	y_value = analogRead(_SigPin_Y);
-	
 	y_value = (y_value-CENTER_VALUE_Y);
-	if(y_value > 0 ) y_value = y_value*(-10)/6;
+	if(y_value > 0 ) y_value = y_value*(-11)/6;
 	else             y_value = y_value*(-7)/10;
+	
+	y_value  = y_value + _Y_offset;
+	
+	if(y_value>480)y_value = 480;
+	else if(y_value<(-480))y_value=-480;
+	else if(((-18)<y_value)&&(y_value<18))y_value = 0;
 	return y_value;
 		
 }

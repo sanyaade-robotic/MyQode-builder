@@ -41,6 +41,12 @@ app.post('/motion_steering_engine', (req, res) => {
     res.send('success');
 });
 
+app.post('/set_mini_fan', (req, res) => {
+    const data = req.body;
+    SEP.RobotBlocks.gs_motion_fan_module(data);
+    res.send('success');
+});
+
 app.post('/show_matrix', (req, res) => {
     const data = req.body;
     SEP.RobotBlocks.gs_matrix_change_9(data);

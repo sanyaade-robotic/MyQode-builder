@@ -42,6 +42,8 @@
 #include "RB_GASSENSOR.h"
 #include "RB_POTENTIOMETER.h"
 #include "RB_LINEPOTENTIOMETER.h"
+#include "RB_FAN.h"
+
 
 
 #if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)    //Qoooers
@@ -114,6 +116,7 @@
 #define   TouchSensor_Set                     0x1D          //触摸传感器主动上报设置
 #define   DigitalDisplay_Set                  0x1E          //4段数码管显示设置
 #define   RGBLEDArray_Set                     0x1F          //4个RGBLED显示设置
+#define   FAN_Set                             0X20          //设置风扇
 
 
 
@@ -135,12 +138,6 @@
 #define   GasSensor_Read                      0XB0          //气体读取      
 #define   Potentimeter_Read                   0XB1          //电位器读取
 #define   LinePotentimeter_Read               0XB2          //滑动电位器读取
-
-
-
-
- 
- 
 
 
 

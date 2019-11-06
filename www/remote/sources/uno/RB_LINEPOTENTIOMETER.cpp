@@ -34,7 +34,7 @@ uint16_t RB_LINEPOTENTIOMETER::GetLinePotentiometer(void)
 
 
 
-uint16_t  RB_LINEPOTENTIOMETER::  GetLinePotentiometerValue(void)
+uint16_t  RB_LINEPOTENTIOMETER:: GetLinePotentiometerValue(void)
 {
     int i = 0;
     uint16_t Value[10];

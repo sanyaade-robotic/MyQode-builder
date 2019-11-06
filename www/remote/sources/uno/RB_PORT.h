@@ -39,6 +39,7 @@
 #define   Gas_Sensor                     0X16
 #define   Potentimeter_Sensor            0X17 
 #define   Line_Potentimeter_Sensor       0X18
+#define   Fan_Divice                     0X19
 
 
         
