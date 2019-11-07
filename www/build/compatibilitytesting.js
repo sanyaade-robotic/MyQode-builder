@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 1324:
+/***/ 1343:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40,7 +40,7 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactRedux = __webpack_require__(13);
 
-var _appStateHoc = __webpack_require__(137);
+var _appStateHoc = __webpack_require__(138);
 
 var _appStateHoc2 = _interopRequireDefault(_appStateHoc);
 
@@ -48,7 +48,7 @@ var _controls = __webpack_require__(150);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _stage = __webpack_require__(215);
+var _stage = __webpack_require__(216);
 
 var _stage2 = _interopRequireDefault(_stage);
 
@@ -160,5 +160,5 @@ _reactDom2.default.render(_react2.default.createElement(App, null), appTarget);
 
 /***/ })
 
-},[1324]);
+},[1343]);
 //# sourceMappingURL=compatibilitytesting.js.map
