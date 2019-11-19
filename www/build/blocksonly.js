@@ -16,7 +16,7 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactRedux = __webpack_require__(13);
 
-var _appStateHoc = __webpack_require__(137);
+var _appStateHoc = __webpack_require__(138);
 
 var _appStateHoc2 = _interopRequireDefault(_appStateHoc);
 
@@ -24,7 +24,7 @@ var _controls = __webpack_require__(150);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _blocks = __webpack_require__(322);
+var _blocks = __webpack_require__(319);
 
 var _blocks2 = _interopRequireDefault(_blocks);
 
