@@ -1,42 +1,42 @@
 webpackJsonp([2],{
 
-/***/ 792:
+/***/ 1324:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(31);
+var _reactDom = __webpack_require__(54);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(13);
 
-var _appStateHoc = __webpack_require__(73);
+var _appStateHoc = __webpack_require__(137);
 
 var _appStateHoc2 = _interopRequireDefault(_appStateHoc);
 
-var _controls = __webpack_require__(85);
+var _controls = __webpack_require__(150);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _blocks = __webpack_require__(199);
+var _blocks = __webpack_require__(322);
 
 var _blocks2 = _interopRequireDefault(_blocks);
 
-var _gui = __webpack_require__(79);
+var _gui = __webpack_require__(144);
 
 var _gui2 = _interopRequireDefault(_gui);
 
-var _projectLoaderHoc = __webpack_require__(86);
+var _projectLoaderHoc = __webpack_require__(171);
 
 var _projectLoaderHoc2 = _interopRequireDefault(_projectLoaderHoc);
 
-var _blocksOnly = __webpack_require__(793);
+var _blocksOnly = __webpack_require__(1325);
 
 var _blocksOnly2 = _interopRequireDefault(_blocksOnly);
 
@@ -72,11 +72,11 @@ _reactDom2.default.render(_react2.default.createElement(App, null), appTarget);
 
 /***/ }),
 
-/***/ 793:
+/***/ 1325:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(794);
+var content = __webpack_require__(1326);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -90,7 +90,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(8)(content, options);
+var update = __webpack_require__(10)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -123,10 +123,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 794:
+/***/ 1326:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(7)(false);
+exports = module.exports = __webpack_require__(9)(false);
 // imports
 
 
@@ -140,5 +140,5 @@ exports.locals = {
 
 /***/ })
 
-},[792]);
+},[1324]);
 //# sourceMappingURL=blocksonly.js.map

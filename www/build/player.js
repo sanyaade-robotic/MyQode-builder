@@ -1,70 +1,70 @@
 webpackJsonp([1],{
 
-/***/ 796:
+/***/ 1328:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _extends2 = __webpack_require__(11);
+var _extends2 = __webpack_require__(14);
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _getPrototypeOf = __webpack_require__(4);
+var _getPrototypeOf = __webpack_require__(6);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(4);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(5);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(7);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(6);
+var _inherits2 = __webpack_require__(8);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(31);
+var _reactDom = __webpack_require__(54);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(13);
 
-var _appStateHoc = __webpack_require__(73);
+var _appStateHoc = __webpack_require__(137);
 
 var _appStateHoc2 = _interopRequireDefault(_appStateHoc);
 
-var _controls = __webpack_require__(85);
+var _controls = __webpack_require__(150);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _stage = __webpack_require__(129);
+var _stage = __webpack_require__(215);
 
 var _stage2 = _interopRequireDefault(_stage);
 
-var _box = __webpack_require__(14);
+var _box = __webpack_require__(18);
 
 var _box2 = _interopRequireDefault(_box);
 
-var _gui = __webpack_require__(79);
+var _gui = __webpack_require__(144);
 
 var _gui2 = _interopRequireDefault(_gui);
 
-var _projectLoaderHoc = __webpack_require__(86);
+var _projectLoaderHoc = __webpack_require__(171);
 
 var _projectLoaderHoc2 = _interopRequireDefault(_projectLoaderHoc);
 
-__webpack_require__(797);
+__webpack_require__(1329);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -157,11 +157,11 @@ _reactDom2.default.render(_react2.default.createElement(App, null), appTarget);
 
 /***/ }),
 
-/***/ 797:
+/***/ 1329:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(798);
+var content = __webpack_require__(1330);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -175,7 +175,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(8)(content, options);
+var update = __webpack_require__(10)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -208,10 +208,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 798:
+/***/ 1330:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(7)(false);
+exports = module.exports = __webpack_require__(9)(false);
 // imports
 
 
@@ -223,5 +223,5 @@ exports.push([module.i, "body {\n    padding: 0;\n    margin: 0;\n}\n", ""]);
 
 /***/ })
 
-},[796]);
+},[1328]);
 //# sourceMappingURL=player.js.map
