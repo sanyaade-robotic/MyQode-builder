@@ -1,10 +1,10 @@
 webpackJsonp([0],{
 
-/***/ 1320:
+/***/ 1339:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(1321);
+var content = __webpack_require__(1340);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -51,7 +51,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1321:
+/***/ 1340:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(9)(false);
@@ -66,11 +66,11 @@ exports.push([module.i, ".toast-title {\n  font-weight: bold;\n}\n.toast-message
 
 /***/ }),
 
-/***/ 1322:
+/***/ 1341:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(1323);
+var content = __webpack_require__(1342);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -117,7 +117,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1323:
+/***/ 1342:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(9)(false);
@@ -125,7 +125,7 @@ exports = module.exports = __webpack_require__(9)(false);
 
 
 // module
-exports.push([module.i, "html,\nbody,\n.index_app_3cj18 {\n    /* probably unecessary, transitional until layout is refactored */\n    width: 100%;\n    height: 100%;\n    margin: 0;\n}\n\n/* @todo: move globally? Safe / side FX, for blocks particularly? */\n\n* { -webkit-box-sizing: border-box; box-sizing: border-box; }\n\n/* Blocks工具栏宽度 */\n\n.scratchCategoryMenu {\n    width: 68px;\n}\n\n.blocklyFlyout, .blocklyScrollbarVertical.blocklyFlyoutScrollbar {\n    margin-left: 16px;\n}\n\n/* 工具栏Blocks字体改大 */\n\n.scratchCategoryMenuItemLabel {\n    font-size: 0.85rem !important;\n}\n\n/* Hover显示完整语句块 */\n\n.blocklyFlyout:hover {\n    overflow: visible;\n}\n\n.injectionDiv {\n    overflow: hidden !important;\n}\n\n.blocklyFlyout:hover .blocklyWorkspace {\n    -webkit-clip-path: none;\n    clip-path: none;\n}\n\n/* 默认Blocks文字改小 */\n\n.blocklyText {\n    font-size: 14pt;\n    font-weight: 400;\n}\n\n.q-btn {\n    line-height: 1.5;\n    display: inline-block;\n    font-weight: 400;\n    text-align: center;\n    -ms-touch-action: manipulation;\n        touch-action: manipulation;\n    cursor: pointer;\n    border: 1px solid transparent;\n    white-space: nowrap;\n    padding: 0 15px;\n    font-size: 14px;\n    border-radius: 4px;\n    height: 32px;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    position: relative;\n    color: #fff;\n    outline: 0;\n    background: none;\n}\n\n.q-btn:hover {\n    color: rgba(0, 0, 0, 0.65);\n    background-color: #fff;\n    border-color: #d9d9d9;\n    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);\n    -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);\n}\n\n.text-primary {\n    color: #1edbb5;\n}\n\n.Dropdown-control{\n    padding-top: 6px;\n    padding-bottom: 6px;\n}\n\n.Dropdown-option{\n    padding-top: 6px;\n    padding-bottom: 6px;\n}\n\n/*\n * 拖动bloq文件到画布\n */\n\n.drag-bloq{\n    position: relative;\n}\n\n.drag-bloq-content{\n    display: none;\n}\n\n.drag-bloq .drag-bloq-content{\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left:0;\n    background: rgba(255,255,255, 0.8);\n    border: 4px dashed #ccc;\n    z-index: 9999;\n    -webkit-transition: all 0.3s ease-out;\n    -o-transition: all 0.3s ease-out;\n    transition: all 0.3s ease-out;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n\n.drag-bloq-content .drag-bloq-box{\n    max-width: 50%;\n    -webkit-box-flex: 0;\n    -webkit-flex: none;\n        -ms-flex: none;\n            flex: none;\n    text-align: center;\n}\n\n.drag-bloq-content p{\n    margin: 0;\n}\n\n.drag-bloq-content .fa{\n    font-size: 10rem;\n    color: #1edbb5;\n}\n\n.drag-bloq-tip{\n    font-size: 24px;\n}\n\n.ace-github{\n    background-color: #efefef !important;\n}\n\n#python-code-1, #python-code-2{\n    -webkit-flex-basis: 80% !important;\n        -ms-flex-preferred-size: 80% !important;\n            flex-basis: 80% !important;\n}\n\n.ace-github .ace_print-margin{\n    background-color: transparent !important;\n}\n", ""]);
+exports.push([module.i, "html,\nbody,\n.index_app_3cj18 {\n    /* probably unecessary, transitional until layout is refactored */\n    width: 100%;\n    height: 100%;\n    margin: 0;\n}\n\n/* @todo: move globally? Safe / side FX, for blocks particularly? */\n\n* { -webkit-box-sizing: border-box; box-sizing: border-box; }\n\n/* Blocks工具栏宽度 */\n\n.scratchCategoryMenu {\n    width: 100px;\n}\n\n.blocklyFlyout, .blocklyScrollbarVertical.blocklyFlyoutScrollbar {\n    margin-left: 48px;\n}\n\n/* 工具栏Blocks字体改大 */\n\n.scratchCategoryMenuItemLabel {\n    font-size: 0.85rem !important;\n}\n\n/* Hover显示完整语句块 */\n\n.blocklyFlyout:hover {\n    overflow: visible;\n}\n\n.injectionDiv {\n    overflow: hidden !important;\n}\n\n.blocklyFlyoutScrollbar {\n    z-index: 19;\n}\n\n.blocklyFlyout:hover .blocklyWorkspace {\n    -webkit-clip-path: none;\n    clip-path: none;\n}\n\n/* 默认Blocks文字改小 */\n\n.blocklyText {\n    font-size: 14pt;\n    font-weight: 400;\n}\n\n.q-btn {\n    line-height: 1.5;\n    display: inline-block;\n    font-weight: 400;\n    text-align: center;\n    -ms-touch-action: manipulation;\n        touch-action: manipulation;\n    cursor: pointer;\n    border: 1px solid transparent;\n    white-space: nowrap;\n    padding: 0 15px;\n    font-size: 14px;\n    border-radius: 4px;\n    height: 32px;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    position: relative;\n    color: #fff;\n    outline: 0;\n    background: none;\n}\n\n.q-btn:hover {\n    color: rgba(0, 0, 0, 0.65);\n    background-color: #fff;\n    border-color: #d9d9d9;\n    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);\n    -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);\n    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);\n}\n\n.text-primary {\n    color: #1edbb5;\n}\n\n.Dropdown-control{\n    padding-top: 6px;\n    padding-bottom: 6px;\n}\n\n.Dropdown-option{\n    padding-top: 6px;\n    padding-bottom: 6px;\n}\n\n/*\n * 拖动bloq文件到画布\n */\n\n.drag-bloq{\n    position: relative;\n}\n\n.drag-bloq-content{\n    display: none;\n}\n\n.drag-bloq .drag-bloq-content{\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left:0;\n    background: rgba(255,255,255, 0.8);\n    border: 4px dashed #ccc;\n    z-index: 9999;\n    -webkit-transition: all 0.3s ease-out;\n    -o-transition: all 0.3s ease-out;\n    transition: all 0.3s ease-out;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n\n.drag-bloq-content .drag-bloq-box{\n    max-width: 50%;\n    -webkit-box-flex: 0;\n    -webkit-flex: none;\n        -ms-flex: none;\n            flex: none;\n    text-align: center;\n}\n\n.drag-bloq-content p{\n    margin: 0;\n}\n\n.drag-bloq-content .fa{\n    font-size: 10rem;\n    color: #1edbb5;\n}\n\n.drag-bloq-tip{\n    font-size: 24px;\n}\n\n.ace-github{\n    background-color: #efefef !important;\n}\n\n#python-code-1, #python-code-2{\n    -webkit-flex-basis: 80% !important;\n        -ms-flex-preferred-size: 80% !important;\n            flex-basis: 80% !important;\n}\n\n.ace-github .ace_print-margin{\n    background-color: transparent !important;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -134,7 +134,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 471:
+/***/ 470:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -144,7 +144,7 @@ var _typeof2 = __webpack_require__(173);
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
-__webpack_require__(490);
+__webpack_require__(489);
 
 var _react = __webpack_require__(1);
 
@@ -162,7 +162,7 @@ var _analytics = __webpack_require__(42);
 
 var _analytics2 = _interopRequireDefault(_analytics);
 
-var _appStateHoc = __webpack_require__(137);
+var _appStateHoc = __webpack_require__(138);
 
 var _appStateHoc2 = _interopRequireDefault(_appStateHoc);
 
@@ -174,9 +174,9 @@ var _projectLoaderHoc = __webpack_require__(171);
 
 var _projectLoaderHoc2 = _interopRequireDefault(_projectLoaderHoc);
 
-__webpack_require__(1320);
+__webpack_require__(1339);
 
-var _index = __webpack_require__(1322);
+var _index = __webpack_require__(1341);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -204,18 +204,18 @@ _reactDom2.default.render(_react2.default.createElement(App, null), appTarget);
 
 /***/ }),
 
-/***/ 490:
+/***/ 489:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(491).polyfill();
+__webpack_require__(490).polyfill();
 
 
 /***/ }),
 
-/***/ 491:
+/***/ 490:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -269,5 +269,5 @@ module.exports = {
 
 /***/ })
 
-},[471]);
+},[470]);
 //# sourceMappingURL=gui.js.map
