@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 1347:
+/***/ 1328:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48,7 +48,7 @@ var _controls = __webpack_require__(150);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _stage = __webpack_require__(216);
+var _stage = __webpack_require__(214);
 
 var _stage2 = _interopRequireDefault(_stage);
 
@@ -64,7 +64,7 @@ var _projectLoaderHoc = __webpack_require__(171);
 
 var _projectLoaderHoc2 = _interopRequireDefault(_projectLoaderHoc);
 
-__webpack_require__(1348);
+__webpack_require__(1329);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -157,11 +157,11 @@ _reactDom2.default.render(_react2.default.createElement(App, null), appTarget);
 
 /***/ }),
 
-/***/ 1348:
+/***/ 1329:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(1349);
+var content = __webpack_require__(1330);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -208,7 +208,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1349:
+/***/ 1330:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(9)(false);
@@ -223,5 +223,5 @@ exports.push([module.i, "body {\n    padding: 0;\n    margin: 0;\n}\n", ""]);
 
 /***/ })
 
-},[1347]);
+},[1328]);
 //# sourceMappingURL=player.js.map
