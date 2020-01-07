@@ -41,6 +41,19 @@ app.post('/motion_steering_engine', (req, res) => {
     res.send('success');
 });
 
+app.post('/set_mini_fan', (req, res) => {
+    const data = req.body;
+    SEP.RobotBlocks.gs_motion_fan_module(data);
+    res.send('success');
+});
+
+app.post('/set_mini_fan2', (req, res) => {
+    const data = req.body;
+    SEP.RobotBlocks.gs_motion_fan_module2(data);
+    res.send('success');
+});
+
+
 app.post('/show_matrix', (req, res) => {
     const data = req.body;
     SEP.RobotBlocks.gs_matrix_change_9(data);
@@ -266,6 +279,12 @@ app.post('/gs_sensing_gas', async (req, res) => {
 app.post('/gs_sensing_flame', async (req, res) => {
     const data = req.body;
     const result = await SEP.RobotBlocks.gs_sensing_flame(data);
+    res.json(parseFloat(result));
+});
+
+app.post('/gs_sensing_linePotentiometer', async (req, res) => {
+    const data = req.body;
+    const result = await SEP.RobotBlocks.gs_sensing_linePotentiometer(data);
     res.json(parseFloat(result));
 });
 
