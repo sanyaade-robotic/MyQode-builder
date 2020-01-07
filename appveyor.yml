@@ -21,6 +21,8 @@ clone_depth: 1
 test_script:
   - cmd: rd /s /q www\remote\arduino\darwin
   - npx electron-builder
+  - Invoke-WebRequest "https://static-hk-robobloq.oss-cn-hongkong.aliyuncs.com/certificate/q-release.exe" -OutFile ".\q-release.exe"
+  - q-release.exe upload "releases\*.exe"
 artifacts:
   - path: 'releases\*.*'
 deploy:
